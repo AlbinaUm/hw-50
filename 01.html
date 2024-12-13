@@ -20,7 +20,6 @@
 <body>
 <div id="app" class="test"></div>
 <script type="text/babel">
-
     const Person = ({name, age, photo}) => {
         return (
             <div className="person">
@@ -31,6 +30,15 @@
             </div>
         );
     };
+
+    const content = (
+        <>
+            <Person name="Jane" age={28} photo="https://i.pinimg.com/474x/a0/e8/da/a0e8dadbb9f91ac6e54d2b418ee4888d.jpg" />
+            <Person name="John" age={30} photo="https://i.pinimg.com/474x/a1/61/52/a161520c589f744375b22acac40810d0.jpg"/>
+        </>
+    );
+
+    ReactDOM.render(content, document.getElementById("app"));
 </script>
 </body>
 </html>
